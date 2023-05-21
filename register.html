@@ -11,12 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
+        <div class="row">
             <div class="col-md-6 px-0">
                 <div class="logo-container">
                     <img src="/assets/images/auth-logo.png" style="width: 10vh; height: 14vh;" alt="Logo">
@@ -28,19 +32,34 @@
             </div>
 
             <div class="col-md-4 col-xs-10">
-                <div class="container">
-                    <h1 class="text-center text-warning">Welcome</h1>
-                    <p class="text-center text-muted">Log in into your exiting account</p>
+                <div class="container auth-form">
+                    <h1 class="text-center text-warning">Let’s Get Started !</h1>
+                    <p class="text-center text-muted">Create new account to access all features</p>
                     <hr />
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                            <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Email address" />
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control form-control-lg" id="inputName"
+                                placeholder="Enter Your Name" />
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
+                            <label for="inputEmail" class="form-label">Email Address*</label>
+                            <input type="email" class="form-control form-control-lg" id="inputEmail"
+                                aria-describedby="emailHelp" placeholder="Enter Email address" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPhone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control form-control-lg" id="inputPhone"
+                                placeholder="08xxxxxxxx" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Create New Password</label>
+                            <input type="password" class="form-control form-control-lg" id="inputPassword"
+                                placeholder="Password" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword2" class="form-label">New Password</label>
+                            <input type="password" class="form-control form-control-lg" id="inputPassword2"
                                 placeholder="Password" />
                         </div>
                         <div class="mb-3 form-check">
@@ -48,16 +67,16 @@
                             <label class="form-check-label" for="exampleCheck1">I agree to terms & conditions</label>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg btn-warning">
-                                Log in
+                            <button type="submit" class="btn width-100 btn-lg">
+                                Register Account
                             </button>
                         </div>
                     </form>
 
                     <hr />
 
-                    <small class="d-block text-center text-muted">Don’t have an account?
-                        <a class="text-warning text-decoration-none" href="/register.html">Sign Up</a></small>
+                    <small class="d-block text-center text-muted">Already have account?
+                        <a class="text-warning text-decoration-none" href="/register.html"> Log in Here</a></small>
                 </div>
             </div>
         </div>
