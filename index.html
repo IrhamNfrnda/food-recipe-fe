@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
 
 <body>
     <header>
-        <div class="container-fluid mt-5">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col">
                     <div>
@@ -27,9 +28,8 @@
                     </div>
                 </div>
                 <div class="col-md-auto"></div>
-                <div class="col-md-2 me-4">
-                    <a class="text-white me-5 fw-bold text-decoration-none" href="/index.html">Login</a>
-                    <a class="text-white fw-bold text-decoration-none" href="/add.html">Register</a>
+                <div class="col-md-1">
+                    <a class="text-white nav-item" href="/index.html">Login</a>
                 </div>
             </div>
         </div>
@@ -54,12 +54,127 @@
                 </div>
             </div>
         </div>
-
     </header>
 
-    <footer>
+    <section class="main-section-recipe">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-md-3 popular-recipe-text-box">
+                    <h3>Popular For You !</h3>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="popular-img-box"></div>
+                    <img src="/assets/images/popular-recipe.png" alt="Popular Image">
+                </div>
+                <div class="col-md-5 justify-content-between">
+                    <h4>Healthy Bone Broth Ramen (Quick & Easy)</h4>
+                    <hr style="width: 10vh;">
+                    <p>Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in a hurry? That`s right!</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="main-section-recipe">
+        <div class="container position-relative">
+            <div class="row mb-5">
+                <div class="col-md-3 popular-recipe-text-box">
+                    <h3>New Recipe</h3>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="new-recipe-box"></div>
+                    <img src="/assets/images/new-recipe.png" alt="Popular Image">
+                </div>
+                <div class="col-md-5 justify-content-between">
+                    <h4>Healthy Bone Broth Ramen (Quick & Easy)</h4>
+                    <hr style="width: 10vh;">
+                    <p>Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in a hurry? That`s right!</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start of popular recipe -->
+    <section id="popular-recipe">
+        <div class="container">
+            <div class="col-md-3 popular-recipe-text-box">
+                <h3>Popular Recipes</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12 mb-4">
+                    <div class="menu-background" style="background-image: url('/assets/images/chicken-kare.png')">
+                        <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                            Chiken Kare
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12 mb-4">
+                    <div class="menu-background" style="background-image: url('/assets/images/bomb-chicken.png')">
+                        <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                            Bomb Chicken
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12 mb-4">
+                    <div class="menu-background" style="background-image: url('/assets/images/banana-smothie-pop.png')">
+                        <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                            Banana Smothie Pop
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12 mb-4">
+                    <div class="menu-background" style="background-image: url('/assets/images/coffe-lava-cake.png')">
+                        <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                            Coffe Lava Cake
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12 mb-4">
+                    <div class="menu-background" style="background-image: url('/assets/images/sugar-salmon.png')">
+                        <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                            Sugar Salmon
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12 mb-4">
+                    <div class="menu-background" style="background-image: url('/assets/images/indian-salad.png')">
+                        <h3 style="text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4)">
+                            Indian Salad
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular recipe -->
+
+    <!-- start of footer -->
+    <footer style="position: relative">
+        <div>
+            <h2 class="text-primary text-center">Eat, Cook, Repeat</h2>
+            <p class="text-muted text-center">
+                Share your best recipe by uploading here !
+            </p>
+        </div>
+
+        <p class="footer-copyright">
+            © built by
+            <a href="https://github.com/irhamnfrnda">Irham Nofrianda</a>
+        </p>
     </footer>
+    <!-- end of footer -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
