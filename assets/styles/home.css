@@ -1,3 +1,8 @@
+@font-face {
+    font-family: airbnbcereal;
+    src: url(../fonts/airbnbcereal.otf);
+}
+
 /* Main Page Style */
 .nav-item {
     font-family: "airbnbcereal";
@@ -16,12 +21,13 @@
 }
 
 .bg-yellow {
-    position: absolute;
+    background-color: #efc81a;
     height: 100vh;
     width: 25%;
-    top: 0;
+    position: absolute;
     right: 0;
-    background-color: #EFC81A;
+    top: 0;
+    z-index: -1;
 }
 
 .hero img {
@@ -116,6 +122,17 @@
     padding-left: 5%;
 }
 
+#popular-recipe h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #3F3A3A;
+}
+
 footer {
     margin-top: 20vh;
     height: 350px;
@@ -123,15 +140,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 .footer-copyright {
     position: absolute;
     bottom: 0;
     z-index: 1;
 }
 
-.menu-background {
+.popular-recipe-image {
     width: 100%;
     background-color: gray;
     height: 400px;
@@ -149,3 +166,61 @@ footer {
     visibility: hidden;
 }
 
+@media only screen and (max-width: 575px) {
+    .hide-desktop {
+        display: block;
+        visibility: visible;
+    }
+
+    .nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .hero img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        margin: auto;
+        height: auto;
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero-left {
+        position: relative;
+        bottom: 15vh;
+    }
+
+    header .col-md-7 {
+        width: 100% !important;
+    }
+
+    .main-section-recipe img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .new-recipe-box {
+        display: block;
+        visibility: hidden;
+    }
+
+    .bg-yellow {
+        height: 90vh;
+        width: 100vh;
+    }
+
+    .popular-for-you img {
+        width: 95% !important;
+    }
+
+}

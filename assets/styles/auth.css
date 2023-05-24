@@ -1,14 +1,14 @@
 @font-face {
     font-family: airbnbcereal;
     src: url(../fonts/airbnbcereal.otf);
-  }
+}
 
 .image-container {
     overflow: hidden;
     height: 100vh;
     position: relative;
-  }
-  
+}
+
 .overlay-box {
     position: absolute;
     top: 0;
@@ -88,7 +88,7 @@
 }
 
 input[type="checkbox"] {
-    accent-color:#EFC81A;
+    accent-color: #EFC81A;
 }
 
 form button {
@@ -100,7 +100,7 @@ form button {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     width: 100%;
 }
 
@@ -110,7 +110,7 @@ form button {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    color: #696F79; 
+    color: #696F79;
 }
 
 .auth-form small {
@@ -121,4 +121,3 @@ form button {
     line-height: 17px;
     color: #999999;
 }
-

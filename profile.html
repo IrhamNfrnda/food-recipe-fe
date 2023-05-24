@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Recipes</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/assets/styles/profile.css">
+  <link rel="stylesheet" href="/assets/styles/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+  <!-- start of header -->
+  <header>
+    <div class="container mt-5">
+      <div class="row nav">
+        <div class="col">
+          <div>
+            <a class="nav-item" href="/index.html">Home</a>
+            <a class="nav-item" href="/add_recipe.html">Add Recipe</a>
+            <a class="nav-item active" href="/profile.html">Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-2 d-flex justify-content-end align-items-center hide-desktop">
+      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        <img src="/assets/images/menu.png" width="35px" height="35px" />
+      </button>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <a class="text-primary fw-bold mb-3 mt-3 text-center" href="/index.html">Home</a>
+        <a class="text-primary fw-bold text-decoration-none mb-3 text-center" href="/add_recipe.html">Add
+          Recipe</a>
+        <a class="text-primary fw-bold text-decoration-none mb-3 text-center" href="/profile.html">Profile</a>
+
+        <a class="text-primary fw-bold text-decoration-none mb-3 text-center" href="/login.html">Login</a>
+      </div>
+    </div>
+  </header>
+  <!-- end of header -->
+
+  <!-- start of user profile -->
+  <div class="container mb-4">
+    <div class="d-flex justify-content-center mt-2">
+      <img src="/assets/images/profile.png" class="rounded-circle" alt="Cinque Terre" width="100" height="100" />
+    </div>
+    <div class="mt-3 d-flex justify-content-center">
+      <h3 class="text-center text-primary">Garneta Sharina</h3>
+    </div>
+  </div>
+  <!-- end of user profile  -->
+
+  <!-- start of recipes -->
+  <header>
+    <section id="popular-recipe">
+      <div class="container d-flex bd-highlight mb-3">
+        <div class="menu-recipes mt-4">
+          <div class="row animate__animated animate__fadeInDown mb-4">
+            <div class="col-12">
+              <div>
+                <a class="text-primary fw-bold" href="#">My Recipes</a>
+                <a class="text-primary fw-bold text-decoration-none mx-4" href="#">Saved Recipes</a>
+                <a class="text-primary fw-bold text-decoration-none" href="#">Liked Recipes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <a class="popular-recipe-image  mb-1 col-sm-2 col-md-2 d-flex align-items-end text-decoration-none text-white"
+              style="background-image: url(/assets/images/bomb-chicken.png)" href="./detail-recipe.html">
+              <p class="fs-3 fw-medium">Bomb Chicken</p>
+            </a>
+
+            <a class="popular-recipe-image mb-1 col-sm-2 col-md-2 d-flex align-items-end text-decoration-none text-white"
+              style="background-image: url(/assets/images/banana-pancake.png)" href="./detail-recipe.html">
+              <p class="fs-3 fw-medium">Banana Pancake</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- end of recipes -->
+
+  <!-- start of footer -->
+  <footer style="position: relative">
+    <div>
+      <h2 class="text-primary text-center">Eat, Cook, Repeat</h2>
+      <p class="text-muted text-center">Share your best recipe by uploading here !</p>
+    </div>
+
+    <p class="footer-copyright">
+      © built by
+      <a href="https://github.com/irhamnfrnda">Irham Nofrianda</a>
+    </p>
+  </footer>
+  <!-- end of footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
