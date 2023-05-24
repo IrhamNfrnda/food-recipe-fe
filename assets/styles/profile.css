@@ -54,19 +54,6 @@ footer {
   border-radius: 10px;
 }
 
-.menu-background {
-  width: 20%;
-  background-color: gray;
-  height: 200px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: end;
-  padding: 20px;
-}
-
 .popular-recipe-image {
   width: 25vw;
   height: 30vh;
@@ -76,9 +63,13 @@ footer {
 }
 
 @media only screen and (max-width: 575px) {
-  nav {
+  .nav {
     display: none;
     visibility: hidden;
+  }
+
+  .nav-item {
+      margin: 0;
   }
 
   #content {
